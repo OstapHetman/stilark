@@ -1,0 +1,23 @@
+#get-call {
+  $bg-clr: #106e98;
+  $text-clr: white;
+  $btn-bg: #228fca;
+
+  padding: 55px 0;
+
+  background-color: $bg-clr;
+  h2 {
+    color: $text-clr;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+  }
+  button {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1.05px;
+    background-color: $btn-bg;
+    color: #fff;
+    border-radius: 10px;
+  }
+}

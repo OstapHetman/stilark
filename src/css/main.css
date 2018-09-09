@@ -121,3 +121,68 @@ header {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 0; }
+
+#get-call {
+  padding: 55px 0;
+  background-color: #106e98; }
+  #get-call h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1.8px; }
+  #get-call button {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1.05px;
+    background-color: #228fca;
+    color: #fff;
+    border-radius: 10px; }
+
+footer {
+  padding-top: 65px;
+  background-color: #f4f2f2; }
+  footer ul li a {
+    color: #696969;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.75px; }
+  footer button {
+    margin-top: 32px; }
+    footer button.outline, footer button.default {
+      background: transparent;
+      border: 2px solid #228fca;
+      border-radius: 10px;
+      color: #228fca;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.85px; }
+    footer button.default {
+      background: #228fca;
+      color: #fff; }
+  footer .social p {
+    font-size: 15px;
+    color: #000;
+    font-style: italic; }
+  footer .social a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #033f5a;
+    font-style: italic; }
+  footer .fb {
+    color: #228fca; }
+    footer .fb h2 {
+      font-size: 60px;
+      font-weight: bold; }
+    footer .fb p {
+      font-size: 16px;
+      font-weight: 300; }
+  footer .bottom-footer {
+    font-size: 15px;
+    font-weight: 300;
+    color: #696969; }
+    footer .bottom-footer span {
+      color: #06425d;
+      font-weight: bold; }
+    footer .bottom-footer a {
+      text-decoration: underline;
+      color: #696969; }

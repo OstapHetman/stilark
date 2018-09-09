@@ -1,0 +1,72 @@
+footer {
+  $link-clr: #696969;
+  $footer-bg: #f4f2f2;
+  $btn-clr: #228fca;
+
+  padding-top: 65px;
+  background-color: $footer-bg;
+  ul {
+    li {
+      a {
+        color: $link-clr;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 0.75px;
+      }
+    }
+  }
+  button {
+    margin-top: 32px;
+    &.outline {
+      background: transparent;
+      border: 2px solid $btn-clr;
+      border-radius: 10px;
+      color: $btn-clr;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.85px;
+    }
+    &.default {
+      @extend .outline;
+      background: $btn-clr;
+      color: #fff;
+    }
+  }
+  .social {
+    p {
+      font-size: 15px;
+      color: #000;
+      font-style: italic;
+    }
+    a {
+      font-size: 12px;
+      text-decoration: underline;
+      color: #033f5a;
+      font-style: italic;
+    }
+  }
+  .fb {
+    color: $btn-clr;
+    h2 {
+      font-size: 60px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  .bottom-footer {
+    font-size: 15px;
+    font-weight: 300;
+    color: #696969;
+    span {
+      color: #06425d;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: underline;
+      color: #696969;
+    }
+  }
+}
