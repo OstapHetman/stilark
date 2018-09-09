@@ -1,0 +1,7 @@
+@mixin sectionTitle() {
+  $text-clr: #228fca;
+
+  color: $text-clr;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
