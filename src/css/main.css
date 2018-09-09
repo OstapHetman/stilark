@@ -1,0 +1,42 @@
+header {
+  min-height: 620px; }
+  header #header-carousel .carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px; }
+  header #header-carousel .carousel-control {
+    width: 8%;
+    opacity: 0.8; }
+    header #header-carousel .carousel-control i.fa {
+      font-size: 80px; }
+  header #header-carousel .carousel-item {
+    min-height: 620px;
+    height: 100%;
+    background: url("../img/home/carousel_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat no-repeat; }
+    header #header-carousel .carousel-item .left-side {
+      padding-top: 75px; }
+      header #header-carousel .carousel-item .left-side__head-text {
+        padding-top: 90px;
+        color: white; }
+        header #header-carousel .carousel-item .left-side__head-text h1 {
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 1.75px; }
+          header #header-carousel .carousel-item .left-side__head-text h1 span {
+            font-size: 55px;
+            letter-spacing: 2.75px; }
+        header #header-carousel .carousel-item .left-side__head-text p {
+          font-size: 19px;
+          color: #c2c0c0;
+          letter-spacing: 0.95px; }
+      header #header-carousel .carousel-item .left-side__btn {
+        padding-top: 58px; }
+        header #header-carousel .carousel-item .left-side__btn button {
+          background-color: #ff7200;
+          color: white;
+          font-size: 37px;
+          letter-spacing: 1.85px;
+          font-weight: 400;
+          border-radius: 10px; }

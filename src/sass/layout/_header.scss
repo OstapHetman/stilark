@@ -1,0 +1,65 @@
+$bg-image: url("../img/home/carousel_bg.png");
+$text-clr: white;
+$sale-clr: #c2c0c0;
+$btn-bg: #ff7200;
+
+header {
+  min-height: 620px;
+  #header-carousel {
+    .carousel-indicators {
+      li {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    .carousel-control {
+      width: 8%;
+      opacity: 0.8;
+      i {
+        &.fa {
+          font-size: 80px;
+        }
+      }
+    }
+    .carousel-item {
+      min-height: 620px;
+      height: 100%;
+      background: $bg-image;
+      background-size: cover;
+      background-repeat: no-repeat no-repeat;
+      .left-side {
+        padding-top: 75px;
+        &__head-text {
+          padding-top: 90px;
+          color: $text-clr;
+          h1 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 1.75px;
+            span {
+              font-size: 55px;
+              letter-spacing: 2.75px;
+            }
+          }
+          p {
+            font-size: 19px;
+            color: $sale-clr;
+            letter-spacing: 0.95px;
+          }
+        }
+        &__btn {
+          padding-top: 58px;
+          button {
+            background-color: $btn-bg;
+            color: $text-clr;
+            font-size: 37px;
+            letter-spacing: 1.85px;
+            font-weight: 400;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
