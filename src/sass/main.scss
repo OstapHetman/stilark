@@ -1,0 +1,18 @@
+// ===== Base Folder====== //
+@import "base/typography";
+// ======================= //
+// ===== Components Folder====== //
+@import "components/buttons";
+// ======================= //
+// ===== Helpers Folder====== //
+@import "helpers/functions";
+@import "helpers/mixins";
+// ======================= //
+// ===== Layout Folder====== //
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+// ======================= //
+// ===== Pages Folder====== //
+@import "pages/home";
+// ======================= //
