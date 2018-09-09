@@ -65,3 +65,31 @@ header {
       color: #08425d;
       font-weight: bold;
       letter-spacing: 1px; }
+
+#why-we {
+  min-height: 480px;
+  height: 100%;
+  background: url("../img/home/why-we_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat no-repeat; }
+  #why-we .section-title {
+    padding: 56px 0;
+    color: #228fca;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #fff; }
+  #why-we .why__text p {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.75px;
+    color: white;
+    text-align: center; }
+  #why-we .button {
+    padding-top: 32px; }
+    #why-we .button button {
+      border-radius: 10px;
+      background-color: #228fca;
+      color: white;
+      font-size: 29px;
+      font-weight: 400;
+      letter-spacing: 1.45px; }
