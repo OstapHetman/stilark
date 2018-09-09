@@ -93,3 +93,31 @@ header {
       font-size: 29px;
       font-weight: 400;
       letter-spacing: 1.45px; }
+
+#order-scheme {
+  background: url("../img/home/zakaz-bg.png");
+  background-size: inherit;
+  background-repeat: no-repeat no-repeat;
+  background-position: left; }
+  #order-scheme .section-title {
+    padding: 56px 0;
+    color: #228fca;
+    letter-spacing: 2px;
+    font-size: 40px; }
+  #order-scheme .number {
+    display: flex;
+    align-items: flex-end; }
+    #order-scheme .number p {
+      font-size: 91px;
+      font-weight: bold;
+      color: #228fca;
+      margin-bottom: 0;
+      height: 80%; }
+  #order-scheme .text {
+    display: flex;
+    align-items: flex-end; }
+    #order-scheme .text p {
+      color: #228fca;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 0; }
