@@ -20,6 +20,105 @@
 
 <body>
 
+    <!-- Start navigation -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/home/logo.png" alt="Brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbars" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbars collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav d-flex align-items-center ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img class="pr-2" src="img/home/menu-icon-1.png"
+                                alt="menu-icon">
+                            О компании</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdown01"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="pr-2" src="img/home/menu-icon-2.png"
+                                alt="menu-icon">Каталог товаров</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Задвижки</a>
+                            <a class="dropdown-item" href="#">Затворы Баттерфляй</a>
+                            <a class="dropdown-item" href="#">Вентили запорные</a>
+                            <a class="dropdown-item" href="#">Клапаны обратные</a>
+                            <a class="dropdown-item" href="#">Фланцы</a>
+                            <a class="dropdown-item" href="#">Краны шаровые
+                                фланцевые</a>
+                            <a class="dropdown-item" href="#">Краны шаровые
+                                муфтовые</a>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img class="pr-2" src="img/home/menu-icon-3.png"
+                                alt="menu-icon">
+                            Прайс-лист</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img class="pr-2" src="img/home/menu-icon-4.png"
+                                alt="menu-icon">
+                            Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" btn px-4" href="#">
+                            Запросить счет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md second-nabavr py-3">
+        <div class="container">
+            <div class="navbars collapse navbar-collapse">
+                <ul class="navbar-nav d-flex align-items-center w-100 justify-content-between">
+                    <li class="nav-item">
+                        <a class=" btn px-4" href="#">
+                            Спец. предложение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img class="pr-2" src="img/home/menu-icon-5.png"
+                                alt="menu-icon">
+                            Доставка товара</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#"><img class="pr-2" src="img/home/menu-icon-6.png"
+                                alt="menu-icon">
+                            Заказ товара</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center social">
+                        <div class="pr-3">
+                            <img src="img/home/location-icon.png" alt="Icon">
+                        </div>
+                        <div>
+                            <p class="mb-0">Киев, ул. Орасительная, 6</p>
+                            <a href="#">Схема проезда</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex align-items-center social">
+                        <div class="pr-3">
+                            <img src="img/home/phone-icon.png" alt="Icon">
+                        </div>
+                        <div>
+                            <p class="mb-0">+38 (044) 566-35-04</p>
+                            <a href="#">Заказать обратный звонок</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
     <!-- Start Carousel -->
     <header>
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
@@ -445,7 +544,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 mb-5 d-flex flex-column justify-content-end">
+                <div class="col-lg-3 mb-5 d-flex flex-column justify-content-end footer-col">
                     <ul class="list-unstyled mb-0">
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Каталог товаров</a></li>
@@ -454,14 +553,14 @@
                     </ul>
                     <button class="btn outline w-75">Запросить счет</button>
                 </div>
-                <div class="col-lg-3 mb-5 d-flex flex-column justify-content-end">
+                <div class="col-lg-3 mb-5 d-flex flex-column justify-content-end footer-col">
                     <ul class="list-unstyled mb-0">
                         <li><a href="#">Информация о доставке</a></li>
                         <li><a href="#">Заказ товара</a></li>
                     </ul>
                     <button class="btn default w-75">Спец. предложение</button>
                 </div>
-                <div class="col-lg-3 mb-5 d-flex align-items-center justify-content-center social">
+                <div class="col-lg-3 mb-5 d-flex align-items-center social footer-col">
                     <ul class="list-unstyled mb-0">
                         <li class="d-flex align-items-center mb-3">
                             <div class="pr-3">
@@ -496,7 +595,7 @@
                 </div>
                 <div class="col-12 bottom-footer pb-3">
                     <p class="text-center mb-0">© 2018 <span>СТИЛАРК</span></p>
-                    <p class="text-center mb-0">Разработка сайта <a href="#">“Mark-Lab”</a></p>
+                    <p class="text-center mb-0">Разработка сайта <a href="https://mark-lab.biz/">“Mark-Lab”</a></p>
                 </div>
             </div>
         </div>

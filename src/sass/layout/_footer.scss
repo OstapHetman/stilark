@@ -2,9 +2,22 @@ footer {
   $link-clr: #696969;
   $footer-bg: #f4f2f2;
   $btn-clr: #228fca;
+  $after-brdr: #106e98;
 
   padding-top: 65px;
   background-color: $footer-bg;
+  .footer-col {
+    position: relative;
+    &:after {
+      content: "";
+      height: 100%;
+      width: 2px;
+      background-color: $after-brdr;
+      opacity: 0.1;
+      right: 7%;
+      position: absolute;
+    }
+  }
   ul {
     li {
       a {
