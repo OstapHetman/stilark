@@ -803,3 +803,96 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.73px; }
+
+#details {
+  padding-bottom: 65px;
+  background-color: #fbfbfb; }
+  #details h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    padding: 56px 0;
+    color: #228fca;
+    letter-spacing: 2px;
+    font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #details h1 {
+        font-size: 28px; } }
+  #details #detailsCarousel .carousel-item {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4; }
+    #details #detailsCarousel .carousel-item img {
+      max-width: 175px; }
+  #details #detailsCarousel .controls {
+    opacity: 0.9; }
+    #details #detailsCarousel .controls i.fa {
+      color: #000;
+      font-size: 50px;
+      background-color: #f4f4f4;
+      padding: 10px 17px; }
+  #details .details__info .in-stock span {
+    font-family: "Lato-Light", sans-serif;
+    letter-spacing: 0.85px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 1px solid #228fca;
+    color: #000;
+    font-size: 17px; }
+  #details .details__info .not-in-stock {
+    padding-top: 15px; }
+    #details .details__info .not-in-stock span {
+      font-family: "Lato-Light", sans-serif;
+      letter-spacing: 0.85px;
+      padding: 5px 25px;
+      border-radius: 10px;
+      border: 1px solid red;
+      color: red;
+      font-size: 17px; }
+  #details .details__info .price p {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 30px; }
+    #details .details__info .price p span {
+      font-size: 25px;
+      font-weight: normal;
+      font-family: "Lato-Light", sans-serif; }
+  #details .details__info .button .btn {
+    background-color: #228fca;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.73px; }
+  #details .details__info .location {
+    font-family: "PT-Sans", sans-serif; }
+    #details .details__info .location p {
+      font-size: 15px;
+      color: #000;
+      font-style: italic; }
+    #details .details__info .location a {
+      font-size: 12px;
+      text-decoration: underline;
+      color: #033f5a;
+      font-style: italic; }
+  #details .details__info .delivery-order ul li a {
+    color: #033f5a;
+    font-family: "PT-Sans", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.75px;
+    font-weight: bold; }
+  #details .details .description p {
+    font-family: "Lato-Light", sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.85px;
+    color: #000;
+    text-align: justify; }
+  #details .details .go-to a {
+    background-color: #228fca;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.73px; }

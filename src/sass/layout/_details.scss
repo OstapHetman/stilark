@@ -1,0 +1,128 @@
+#details {
+  $bg-clr: #fbfbfb;
+  $main-text-clr: #000;
+  $btn-bg: #228fca;
+
+  padding-bottom: 65px;
+  background-color: $bg-clr;
+  h1 {
+    @include sectionTitle;
+  }
+  #detailsCarousel {
+    .carousel-item {
+      background-color: #fff;
+      border-radius: 10px;
+      border: 2px solid #f4f4f4;
+      img {
+        max-width: 175px;
+      }
+    }
+    .controls {
+      opacity: 0.9;
+      i.fa {
+        color: #000;
+        font-size: 50px;
+        background-color: #f4f4f4;
+        padding: 10px 17px;
+      }
+    }
+  }
+  .details {
+    &__info {
+      .in-stock {
+        span {
+          font-family: "Lato-Light", sans-serif;
+          letter-spacing: 0.85px;
+          padding: 5px 25px;
+          border-radius: 10px;
+          border: 1px solid #228fca;
+          color: #000;
+          font-size: 17px;
+        }
+      }
+      .not-in-stock {
+        padding-top: 15px;
+        span {
+          font-family: "Lato-Light", sans-serif;
+          letter-spacing: 0.85px;
+          padding: 5px 25px;
+          border-radius: 10px;
+          border: 1px solid red;
+          color: red;
+          font-size: 17px;
+        }
+      }
+      .price {
+        p {
+          font-family: "Lato", sans-serif;
+          font-weight: bold;
+          font-size: 30px;
+          span {
+            font-size: 25px;
+            font-weight: normal;
+            font-family: "Lato-Light", sans-serif;
+          }
+        }
+      }
+      .button {
+        .btn {
+          background-color: $btn-bg;
+          color: #fff;
+          border-radius: 10px;
+          font-family: "Lato", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: 0.73px;
+        }
+      }
+      .location {
+        font-family: "PT-Sans", sans-serif;
+        p {
+          font-size: 15px;
+          color: #000;
+          font-style: italic;
+        }
+        a {
+          font-size: 12px;
+          text-decoration: underline;
+          color: #033f5a;
+          font-style: italic;
+        }
+      }
+      .delivery-order {
+        ul {
+          li {
+            a {
+              color: #033f5a;
+              font-family: "PT-Sans", sans-serif;
+              font-size: 15px;
+              font-style: italic;
+              letter-spacing: 0.75px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .description {
+      p {
+        font-family: "Lato-Light", sans-serif;
+        font-size: 17px;
+        letter-spacing: 0.85px;
+        color: $main-text-clr;
+        text-align: justify;
+      }
+    }
+    .go-to {
+      a {
+        background-color: $btn-bg;
+        color: #fff;
+        border-radius: 10px;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.73px;
+      }
+    }
+  }
+}
