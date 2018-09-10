@@ -4,4 +4,7 @@
   color: $text-clr;
   letter-spacing: 2px;
   font-size: 40px;
+  @media screen and (max-width: 576px) {
+    font-size: 28px;
+  }
 }

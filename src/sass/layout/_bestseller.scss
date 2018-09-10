@@ -48,6 +48,67 @@
       }
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #carouselProduction {
+      .productionsSliderItem .card {
+        max-width: 180px;
+        padding-bottom: 20px;
+        .cover {
+          padding: 15px 0;
+          img {
+            max-width: 100px;
+            height: auto;
+          }
+        }
+        p {
+          padding-top: 10px;
+          font-size: 12px;
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+      .carousel-controls {
+        width: 1%;
+        opacity: 1;
+        i.fa {
+          color: #228fca;
+          font-size: 80px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+    #carouselProduction {
+      .productionsSliderItem .card {
+        max-width: 220px;
+        padding-bottom: 20px;
+        .cover {
+          padding: 15px 0;
+          img {
+            max-width: 125px;
+            height: auto;
+          }
+        }
+        p {
+          padding-top: 10px;
+          font-size: 14px;
+        }
+        button {
+          font-size: 13px;
+        }
+      }
+      .carousel-controls {
+        width: 1%;
+        opacity: 1;
+        i.fa {
+          color: #228fca;
+          font-size: 80px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
   .our-production .carousel-inner .active,

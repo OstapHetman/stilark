@@ -34,4 +34,11 @@ $btn-bg: #228fca;
       letter-spacing: 1.45px;
     }
   }
+  @media screen and (max-width: 575px) {
+    .button {
+      button {
+        font-size: 18px;
+      }
+    }
+  }
 }

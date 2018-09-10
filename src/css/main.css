@@ -1,9 +1,12 @@
-nav.navbar.second-nabavr {
+nav.navbar.second-navbar {
   background-color: #f8f8f8;
   border-top: 2px #d6d6d6 solid; }
-  nav.navbar.second-nabavr ul.navbar-nav li:first-child a {
+  nav.navbar.second-navbar ul.navbar-nav li:first-child a {
     background-color: #228fca;
     color: #fff; }
+
+nav.navbar .navbar-toggler i.fa {
+  color: #228fca; }
 
 nav.navbar ul.navbar-nav li {
   padding-right: 15px; }
@@ -31,6 +34,46 @@ nav.navbar ul.navbar-nav li {
     color: #033f5a;
     font-style: italic;
     font-weight: normal; }
+
+@media screen and (max-width: 991px) {
+  nav.navbar .navbar-toggler:focus,
+  nav.navbar .navbar-toggler:hover {
+    outline: unset; }
+  nav.navbar .navbar-collapse {
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 58px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 100vh; }
+  nav.navbar.second-navbar {
+    padding: 0 !important; }
+    nav.navbar.second-navbar .navbar-collapse {
+      padding: 0.5rem 1rem;
+      position: absolute;
+      top: 210px;
+      right: 0;
+      left: 0px;
+      z-index: 100;
+      height: 100vh; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  nav.navbar a.navbar-brand img {
+    max-width: 125px; }
+  nav.navbar ul.navbar-nav li a {
+    font-size: 12px; }
+    nav.navbar ul.navbar-nav li a.btn {
+      font-size: 13px; }
+  nav.navbar ul.navbar-nav li.social p {
+    font-size: 10px; }
+  nav.navbar ul.navbar-nav li.social a {
+    font-size: 11px;
+    text-align: center; } }
+
+@media screen and (max-width: 991px) {
+  nav.navbar a.navbar-brand img {
+    max-width: 100px; } }
 
 header {
   min-height: 620px; }
@@ -74,6 +117,111 @@ header {
           letter-spacing: 1.85px;
           font-weight: 400;
           border-radius: 10px; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    header {
+      min-height: unset; }
+      header #header-carousel .carousel-control i.fa {
+        font-size: 80px; }
+      header #header-carousel .carousel-item {
+        min-height: 440px;
+        background-size: cover; }
+        header #header-carousel .carousel-item .left-side {
+          padding-top: 80px;
+          padding-left: 50px; }
+          header #header-carousel .carousel-item .left-side__logo img {
+            max-width: 175px; }
+          header #header-carousel .carousel-item .left-side__head-text {
+            padding-top: 20px; }
+            header #header-carousel .carousel-item .left-side__head-text h1 {
+              font-size: 22px; }
+              header #header-carousel .carousel-item .left-side__head-text h1 span {
+                font-size: 28px; }
+            header #header-carousel .carousel-item .left-side__head-text p {
+              font-size: 14px; }
+          header #header-carousel .carousel-item .left-side__btn {
+            padding-top: 30px; }
+            header #header-carousel .carousel-item .left-side__btn button {
+              font-size: 20px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+      min-height: unset; }
+      header #header-carousel .carousel-control i.fa {
+        font-size: 60px; }
+      header #header-carousel .carousel-item {
+        min-height: unset;
+        height: 370px;
+        background-size: cover; }
+        header #header-carousel .carousel-item .left-side {
+          padding-top: 80px;
+          padding-left: 50px; }
+          header #header-carousel .carousel-item .left-side__logo img {
+            max-width: 125px; }
+          header #header-carousel .carousel-item .left-side__head-text {
+            padding-top: 20px; }
+            header #header-carousel .carousel-item .left-side__head-text h1 {
+              font-size: 15px; }
+              header #header-carousel .carousel-item .left-side__head-text h1 span {
+                font-size: 22px; }
+            header #header-carousel .carousel-item .left-side__head-text p {
+              font-size: 12px; }
+          header #header-carousel .carousel-item .left-side__btn {
+            padding-top: 30px; }
+            header #header-carousel .carousel-item .left-side__btn button {
+              font-size: 15px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    header {
+      min-height: unset; }
+      header #header-carousel .carousel-control i.fa {
+        font-size: 60px; }
+      header #header-carousel .carousel-item {
+        min-height: unset;
+        height: 270px;
+        background-size: cover; }
+        header #header-carousel .carousel-item .left-side {
+          padding-top: 40px;
+          padding-left: 10px; }
+          header #header-carousel .carousel-item .left-side__logo img {
+            max-width: 100px; }
+          header #header-carousel .carousel-item .left-side__head-text {
+            padding-top: 20px; }
+            header #header-carousel .carousel-item .left-side__head-text h1 {
+              font-size: 14px; }
+              header #header-carousel .carousel-item .left-side__head-text h1 span {
+                font-size: 18px; }
+            header #header-carousel .carousel-item .left-side__head-text p {
+              font-size: 12px; }
+          header #header-carousel .carousel-item .left-side__btn {
+            padding-top: 15px; }
+            header #header-carousel .carousel-item .left-side__btn button {
+              font-size: 15px; } }
+  @media screen and (max-width: 575px) {
+    header {
+      min-height: unset; }
+      header #header-carousel .carousel-control i.fa {
+        font-size: 60px; }
+      header #header-carousel .carousel-item {
+        min-height: unset;
+        height: 200px;
+        background-size: cover; }
+        header #header-carousel .carousel-item .left-side {
+          padding-top: 10px;
+          padding-left: 20px; }
+          header #header-carousel .carousel-item .left-side__logo {
+            display: none; }
+          header #header-carousel .carousel-item .left-side__head-text {
+            padding-top: 30px; }
+            header #header-carousel .carousel-item .left-side__head-text h1 {
+              font-size: 12px; }
+              header #header-carousel .carousel-item .left-side__head-text h1 span {
+                font-size: 12px;
+                font-weight: bold; }
+            header #header-carousel .carousel-item .left-side__head-text p {
+              font-size: 12px; }
+          header #header-carousel .carousel-item .left-side__btn {
+            display: none;
+            padding-top: 15px; }
+            header #header-carousel .carousel-item .left-side__btn button {
+              font-size: 15px; } }
 
 #catalog {
   padding-bottom: 23px; }
@@ -82,6 +230,9 @@ header {
     color: #228fca;
     letter-spacing: 2px;
     font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #catalog .catalog-title {
+        font-size: 28px; } }
   #catalog .catalog a {
     min-height: 282px;
     height: 100%;
@@ -112,6 +263,9 @@ header {
     letter-spacing: 2px;
     font-size: 40px;
     color: #fff; }
+    @media screen and (max-width: 576px) {
+      #why-we .section-title {
+        font-size: 28px; } }
   #why-we .why__text p {
     font-size: 15px;
     font-weight: bold;
@@ -127,6 +281,9 @@ header {
       font-size: 29px;
       font-weight: 400;
       letter-spacing: 1.45px; }
+  @media screen and (max-width: 575px) {
+    #why-we .button button {
+      font-size: 18px; } }
 
 #bestseller {
   background: url("../img/home/bestseller-bg.png");
@@ -138,6 +295,9 @@ header {
     color: #228fca;
     letter-spacing: 2px;
     font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #bestseller .section-title {
+        font-size: 28px; } }
   #bestseller #carouselProduction .productionsSliderItem .card {
     border-radius: 10px;
     border: 2px solid #228fca;
@@ -166,6 +326,48 @@ header {
     #bestseller #carouselProduction .carousel-controls i.fa {
       color: #228fca;
       font-size: 90px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #bestseller #carouselProduction .productionsSliderItem .card {
+      max-width: 180px;
+      padding-bottom: 20px; }
+      #bestseller #carouselProduction .productionsSliderItem .card .cover {
+        padding: 15px 0; }
+        #bestseller #carouselProduction .productionsSliderItem .card .cover img {
+          max-width: 100px;
+          height: auto; }
+      #bestseller #carouselProduction .productionsSliderItem .card p {
+        padding-top: 10px;
+        font-size: 12px; }
+      #bestseller #carouselProduction .productionsSliderItem .card button {
+        font-size: 12px; }
+    #bestseller #carouselProduction .carousel-controls {
+      width: 1%;
+      opacity: 1; }
+      #bestseller #carouselProduction .carousel-controls i.fa {
+        color: #228fca;
+        font-size: 80px; } }
+  @media screen and (max-width: 767px) {
+    #bestseller {
+      padding-bottom: 40px; }
+      #bestseller #carouselProduction .productionsSliderItem .card {
+        max-width: 220px;
+        padding-bottom: 20px; }
+        #bestseller #carouselProduction .productionsSliderItem .card .cover {
+          padding: 15px 0; }
+          #bestseller #carouselProduction .productionsSliderItem .card .cover img {
+            max-width: 125px;
+            height: auto; }
+        #bestseller #carouselProduction .productionsSliderItem .card p {
+          padding-top: 10px;
+          font-size: 14px; }
+        #bestseller #carouselProduction .productionsSliderItem .card button {
+          font-size: 13px; }
+      #bestseller #carouselProduction .carousel-controls {
+        width: 1%;
+        opacity: 1; }
+        #bestseller #carouselProduction .carousel-controls i.fa {
+          color: #228fca;
+          font-size: 80px; } }
 
 @media (min-width: 768px) {
   .our-production .carousel-inner .active,
@@ -228,6 +430,9 @@ header {
     color: #228fca;
     letter-spacing: 2px;
     font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #order-scheme .section-title {
+        font-size: 28px; } }
   #order-scheme .number {
     display: flex;
     align-items: flex-end; }
@@ -245,6 +450,9 @@ header {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    #order-scheme {
+      margin-top: 0; } }
   @media screen and (max-width: 575px) {
     #order-scheme .number p {
       font-size: 50px; }
@@ -341,3 +549,24 @@ footer {
     footer .bottom-footer a {
       text-decoration: underline;
       color: #696969; }
+  @media screen and (max-width: 767px) {
+    footer button.outline, footer button.default {
+      font-size: 14px; }
+    footer button.default {
+      font-size: 14px; } }
+  @media screen and (max-width: 575px) {
+    footer button.outline, footer button.default {
+      margin-left: auto;
+      margin-right: auto; }
+    footer button.default {
+      margin-left: auto;
+      margin-right: auto; }
+    footer .footer-col:after {
+      content: unset; }
+    footer .fb h2 {
+      font-size: 36px; }
+    footer .fb p {
+      font-size: 14px; }
+    footer img {
+      max-width: 35px;
+      height: auto; } }

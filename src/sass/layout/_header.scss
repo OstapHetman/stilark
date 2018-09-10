@@ -62,4 +62,183 @@ header {
       }
     }
   }
+  // Comment
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    min-height: unset;
+    #header-carousel {
+      .carousel-control {
+        i {
+          &.fa {
+            font-size: 80px;
+          }
+        }
+      }
+      .carousel-item {
+        min-height: 440px;
+        background-size: cover;
+        .left-side {
+          padding-top: 80px;
+          padding-left: 50px;
+          &__logo {
+            img {
+              max-width: 175px;
+            }
+          }
+          &__head-text {
+            padding-top: 20px;
+            h1 {
+              font-size: 22px;
+              span {
+                font-size: 28px;
+              }
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          &__btn {
+            padding-top: 30px;
+            button {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Comment
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    min-height: unset;
+    #header-carousel {
+      .carousel-control {
+        i {
+          &.fa {
+            font-size: 60px;
+          }
+        }
+      }
+      .carousel-item {
+        min-height: unset;
+        height: 370px;
+        background-size: cover;
+        .left-side {
+          padding-top: 80px;
+          padding-left: 50px;
+          &__logo {
+            img {
+              max-width: 125px;
+            }
+          }
+          &__head-text {
+            padding-top: 20px;
+            h1 {
+              font-size: 15px;
+              span {
+                font-size: 22px;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          &__btn {
+            padding-top: 30px;
+            button {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Comment
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    min-height: unset;
+    #header-carousel {
+      .carousel-control {
+        i {
+          &.fa {
+            font-size: 60px;
+          }
+        }
+      }
+      .carousel-item {
+        min-height: unset;
+        height: 270px;
+        background-size: cover;
+        .left-side {
+          padding-top: 40px;
+          padding-left: 10px;
+          &__logo {
+            img {
+              max-width: 100px;
+            }
+          }
+          &__head-text {
+            padding-top: 20px;
+            h1 {
+              font-size: 14px;
+              span {
+                font-size: 18px;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          &__btn {
+            padding-top: 15px;
+            button {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Comment
+  @media screen and (max-width: 575px) {
+    min-height: unset;
+    #header-carousel {
+      .carousel-control {
+        i {
+          &.fa {
+            font-size: 60px;
+          }
+        }
+      }
+      .carousel-item {
+        min-height: unset;
+        height: 200px;
+        background-size: cover;
+        .left-side {
+          padding-top: 10px;
+          padding-left: 20px;
+          &__logo {
+            display: none;
+          }
+          &__head-text {
+            padding-top: 30px;
+            h1 {
+              font-size: 12px;
+              span {
+                font-size: 12px;
+                font-weight: bold;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          &__btn {
+            display: none;
+            padding-top: 15px;
+            button {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
