@@ -20,6 +20,7 @@ $catalog-txt-clr: #08425d;
       align-items: center;
       justify-content: center;
       &-text {
+        font-family: "Lato", sans-serif;
         padding-top: 30px;
         font-size: 20px;
         color: $catalog-txt-clr;

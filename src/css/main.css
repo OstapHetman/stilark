@@ -1,122 +1,143 @@
-nav.navbar.second-navbar {
-  background-color: #f8f8f8;
-  border-top: 2px #d6d6d6 solid; }
-  nav.navbar.second-navbar ul.navbar-nav li:first-child a {
-    background-color: #228fca;
-    color: #fff; }
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Black.ttf") format("truetype"); }
 
-nav.navbar .navbar-toggler i.fa {
-  color: #228fca; }
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato/Lato-Light.ttf") format("truetype"); }
 
-nav.navbar ul.navbar-nav li {
-  padding-right: 15px; }
-  nav.navbar ul.navbar-nav li:last-child {
-    padding-right: unset; }
-  nav.navbar ul.navbar-nav li a {
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.75px;
-    color: #033f5a; }
-    nav.navbar ul.navbar-nav li a.btn {
-      border: 2px solid #228fca;
-      border-radius: 10px;
-      color: #228fca;
-      font-size: 17px;
-      font-weight: 400;
-      letter-spacing: 0.85px; }
-  nav.navbar ul.navbar-nav li.social p {
-    font-size: 15px;
-    color: #000;
-    font-style: italic; }
-  nav.navbar ul.navbar-nav li.social a {
-    font-size: 12px;
-    text-decoration: underline;
-    color: #033f5a;
-    font-style: italic;
-    font-weight: normal; }
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/Myriad/MyriadPro.otf") format("truetype"); }
 
-@media screen and (max-width: 991px) {
-  nav.navbar .navbar-toggler:focus,
-  nav.navbar .navbar-toggler:hover {
-    outline: unset; }
-  nav.navbar .navbar-collapse {
-    background: rgba(255, 255, 255, 0.95);
-    position: absolute;
-    top: 58px;
-    right: 0px;
-    left: 0px;
-    z-index: 100;
-    height: 100vh; }
+@font-face {
+  font-family: "PT-Sans";
+  src: url("../fonts/PT-Sans/pt-sans.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Mania";
+  src: url("../fonts/Mania/copyfonts.com_mania-oblique-opentype.ttf") format("truetype"); }
+
+nav.navbar {
+  font-family: "PT-Sans", sans-serif; }
   nav.navbar.second-navbar {
-    padding: 0 !important; }
-    nav.navbar.second-navbar .navbar-collapse {
-      padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border-top: 2px #d6d6d6 solid; }
+    nav.navbar.second-navbar ul.navbar-nav li:first-child a {
+      background-color: #228fca;
+      color: #fff; }
+  nav.navbar .navbar-toggler i.fa {
+    color: #228fca; }
+  nav.navbar ul.navbar-nav li {
+    padding-right: 15px; }
+    nav.navbar ul.navbar-nav li:last-child {
+      padding-right: unset; }
+    nav.navbar ul.navbar-nav li a {
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 0.75px;
+      color: #033f5a; }
+      nav.navbar ul.navbar-nav li a.btn {
+        font-family: "MyriadPro", sans-serif;
+        border: 2px solid #228fca;
+        border-radius: 10px;
+        color: #228fca;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0.85px; }
+    nav.navbar ul.navbar-nav li.social p {
+      font-size: 15px;
+      color: #000;
+      font-style: italic; }
+    nav.navbar ul.navbar-nav li.social a {
+      font-size: 12px;
+      text-decoration: underline;
+      color: #033f5a;
+      font-style: italic;
+      font-weight: normal; }
+  @media screen and (max-width: 991px) {
+    nav.navbar .navbar-toggler:focus,
+    nav.navbar .navbar-toggler:hover {
+      outline: unset; }
+    nav.navbar .navbar-collapse {
+      background: rgba(255, 255, 255, 0.95);
       position: absolute;
-      top: 210px;
-      right: 0;
+      top: 58px;
+      right: 0px;
       left: 0px;
       z-index: 100;
-      height: 100vh; } }
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  nav.navbar a.navbar-brand img {
-    max-width: 125px; }
-  nav.navbar ul.navbar-nav li a {
-    font-size: 12px; }
-    nav.navbar ul.navbar-nav li a.btn {
-      font-size: 13px; }
-  nav.navbar ul.navbar-nav li.social p {
-    font-size: 10px; }
-  nav.navbar ul.navbar-nav li.social a {
-    font-size: 11px;
-    text-align: center; } }
-
-@media screen and (max-width: 991px) {
-  nav.navbar a.navbar-brand img {
-    max-width: 100px; } }
+      height: 100vh; }
+    nav.navbar.second-navbar {
+      padding: 0 !important; }
+      nav.navbar.second-navbar .navbar-collapse {
+        padding: 0.5rem 1rem;
+        position: absolute;
+        top: 210px;
+        right: 0;
+        left: 0px;
+        z-index: 100;
+        height: 100vh; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    nav.navbar a.navbar-brand img {
+      max-width: 125px; }
+    nav.navbar ul.navbar-nav li a {
+      font-size: 12px; }
+      nav.navbar ul.navbar-nav li a.btn {
+        font-size: 13px; }
+    nav.navbar ul.navbar-nav li.social p {
+      font-size: 10px; }
+    nav.navbar ul.navbar-nav li.social a {
+      font-size: 11px;
+      text-align: center; } }
+  @media screen and (max-width: 991px) {
+    nav.navbar a.navbar-brand img {
+      max-width: 100px; } }
 
 header {
   min-height: 620px; }
-  header #header-carousel .carousel-indicators li {
-    border-radius: 50%;
-    width: 10px;
-    height: 10px; }
-  header #header-carousel .carousel-control {
-    width: 8%;
-    opacity: 0.8; }
-    header #header-carousel .carousel-control i.fa {
-      font-size: 80px; }
-  header #header-carousel .carousel-item {
-    min-height: 620px;
-    height: 100%;
-    background: url("../img/home/carousel_bg.png");
-    background-size: cover;
-    background-repeat: no-repeat no-repeat; }
-    header #header-carousel .carousel-item .left-side {
-      padding-top: 75px; }
-      header #header-carousel .carousel-item .left-side__head-text {
-        padding-top: 90px;
-        color: white; }
-        header #header-carousel .carousel-item .left-side__head-text h1 {
-          font-size: 30px;
-          font-weight: 700;
-          letter-spacing: 1.75px; }
-          header #header-carousel .carousel-item .left-side__head-text h1 span {
-            font-size: 55px;
-            letter-spacing: 2.75px; }
-        header #header-carousel .carousel-item .left-side__head-text p {
-          font-size: 19px;
-          color: #c2c0c0;
-          letter-spacing: 0.95px; }
-      header #header-carousel .carousel-item .left-side__btn {
-        padding-top: 58px; }
-        header #header-carousel .carousel-item .left-side__btn button {
-          background-color: #ff7200;
-          color: white;
-          font-size: 37px;
-          letter-spacing: 1.85px;
-          font-weight: 400;
-          border-radius: 10px; }
+  header #header-carousel {
+    font-family: "PT-Sans", sans-serif; }
+    header #header-carousel .carousel-indicators li {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px; }
+    header #header-carousel .carousel-control {
+      width: 8%;
+      opacity: 0.8; }
+      header #header-carousel .carousel-control i.fa {
+        font-size: 80px; }
+    header #header-carousel .carousel-item {
+      min-height: 620px;
+      height: 100%;
+      background: url("../img/home/carousel_bg.png");
+      background-size: cover;
+      background-repeat: no-repeat no-repeat; }
+      header #header-carousel .carousel-item .left-side {
+        padding-top: 75px; }
+        header #header-carousel .carousel-item .left-side__head-text {
+          padding-top: 90px;
+          color: white; }
+          header #header-carousel .carousel-item .left-side__head-text h1 {
+            font-size: 33px;
+            font-weight: 700;
+            letter-spacing: 1.75px; }
+            header #header-carousel .carousel-item .left-side__head-text h1 span {
+              font-size: 55px;
+              letter-spacing: 2.75px; }
+          header #header-carousel .carousel-item .left-side__head-text p {
+            font-size: 19px;
+            color: #c2c0c0;
+            letter-spacing: 0.95px; }
+        header #header-carousel .carousel-item .left-side__btn {
+          padding-top: 58px; }
+          header #header-carousel .carousel-item .left-side__btn button {
+            font-family: "MyriadPro", sans-serif;
+            background-color: #ff7200;
+            color: white;
+            font-size: 37px;
+            letter-spacing: 1.85px;
+            font-weight: 400;
+            border-radius: 10px; }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     header {
       min-height: unset; }
@@ -226,6 +247,8 @@ header {
 #catalog {
   padding-bottom: 23px; }
   #catalog .catalog-title {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
     padding: 56px 0;
     color: #228fca;
     letter-spacing: 2px;
@@ -245,6 +268,7 @@ header {
     align-items: center;
     justify-content: center; }
     #catalog .catalog__item-text {
+      font-family: "Lato", sans-serif;
       padding-top: 30px;
       font-size: 20px;
       color: #08425d;
@@ -258,6 +282,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat no-repeat; }
   #why-we .section-title {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
     padding: 56px 0;
     color: #228fca;
     letter-spacing: 2px;
@@ -267,6 +293,7 @@ header {
       #why-we .section-title {
         font-size: 28px; } }
   #why-we .why__text p {
+    font-family: "Lato", sans-serif;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 0.75px;
@@ -291,6 +318,8 @@ header {
   background-repeat: no-repeat no-repeat;
   background-position: right; }
   #bestseller .section-title {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
     padding: 56px 0;
     color: #228fca;
     letter-spacing: 2px;
@@ -308,12 +337,14 @@ header {
       border-radius: 10px 10px 0 0;
       background-color: #f9f9f9; }
     #bestseller #carouselProduction .productionsSliderItem .card p {
+      font-family: "Lato", sans-serif;
       padding-top: 15px;
       color: #033f5a;
       font-size: 18px;
       font-weight: bold;
       letter-spacing: 0.9px; }
     #bestseller #carouselProduction .productionsSliderItem .card button {
+      font-family: "MyriadPro", sans-serif;
       background-color: #228fca;
       border-radius: 10px;
       color: #fff;
@@ -426,6 +457,8 @@ header {
   margin-top: 40px;
   padding-bottom: 60px; }
   #order-scheme .section-title {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
     padding: 56px 0;
     color: #228fca;
     letter-spacing: 2px;
@@ -437,12 +470,14 @@ header {
     display: flex;
     align-items: flex-end; }
     #order-scheme .number p {
+      font-family: "Mania", sans-serif;
       font-size: 91px;
       font-weight: bold;
       color: #228fca;
       margin-bottom: 0;
       height: 80%; }
   #order-scheme .text {
+    font-family: "PT-Sans", sans-serif;
     display: flex;
     align-items: flex-end; }
     #order-scheme .text p {
@@ -463,11 +498,13 @@ header {
   padding: 55px 0;
   background-color: #106e98; }
   #get-call h2 {
+    font-family: "Lato", sans-serif;
     color: white;
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 1.8px; }
   #get-call button {
+    font-family: "Lato", sans-serif;
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 1.05px;
@@ -495,6 +532,7 @@ footer {
   padding-top: 65px;
   background-color: #f4f2f2; }
   footer .footer-col {
+    font-family: "Lato", sans-serif;
     position: relative; }
     footer .footer-col:after {
       content: "";
@@ -510,7 +548,8 @@ footer {
     font-weight: 300;
     letter-spacing: 0.75px; }
   footer button {
-    margin-top: 32px; }
+    margin-top: 32px;
+    font-family: "MyriadPro", sans-serif; }
     footer button.outline, footer button.default {
       background: transparent;
       border: 2px solid #228fca;
@@ -522,15 +561,17 @@ footer {
     footer button.default {
       background: #228fca;
       color: #fff; }
-  footer .social p {
-    font-size: 15px;
-    color: #000;
-    font-style: italic; }
-  footer .social a {
-    font-size: 12px;
-    text-decoration: underline;
-    color: #033f5a;
-    font-style: italic; }
+  footer .social {
+    font-family: "PT-Sans", sans-serif; }
+    footer .social p {
+      font-size: 15px;
+      color: #000;
+      font-style: italic; }
+    footer .social a {
+      font-size: 12px;
+      text-decoration: underline;
+      color: #033f5a;
+      font-style: italic; }
   footer .fb {
     color: #228fca; }
     footer .fb h2 {
@@ -541,13 +582,15 @@ footer {
       font-weight: 300; }
   footer .bottom-footer {
     font-size: 15px;
-    font-weight: 300;
-    color: #696969; }
+    font-weight: 100;
+    font-family: "Lato-Light", sans-serif; }
     footer .bottom-footer span {
       color: #06425d;
       font-weight: bold; }
     footer .bottom-footer a {
       text-decoration: underline;
+      color: #696969; }
+    footer .bottom-footer p {
       color: #696969; }
   @media screen and (max-width: 767px) {
     footer button.outline, footer button.default {
@@ -570,3 +613,55 @@ footer {
     footer img {
       max-width: 35px;
       height: auto; } }
+
+#order {
+  padding-bottom: 65px;
+  background-color: #fbfbfb; }
+  #order h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    padding: 56px 0;
+    color: #228fca;
+    letter-spacing: 2px;
+    font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #order h1 {
+        font-size: 28px; } }
+  #order .order__payment h4 {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #06425d; }
+  #order .order__payment ul li {
+    font-family: "Lato-Light", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    color: #000; }
+  #order .order__payment p {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #06425d; }
+  #order .order__line {
+    width: 100%;
+    border-top: 1px solid #a0b7c1; }
+  #order .order__how-to h4 {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #06425d; }
+  #order .order__how-to p {
+    font-family: "Lato-Light", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    color: #000;
+    text-transform: uppercase; }
+  #order .order__go-to-catalog a {
+    background-color: #228fca;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.73px; }

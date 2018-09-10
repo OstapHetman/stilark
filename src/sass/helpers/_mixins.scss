@@ -1,5 +1,8 @@
 @mixin sectionTitle() {
   $text-clr: #228fca;
+
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
   padding: 56px 0;
   color: $text-clr;
   letter-spacing: 2px;

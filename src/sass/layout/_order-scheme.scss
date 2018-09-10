@@ -14,7 +14,9 @@ $text-color: #228fca;
   .number {
     display: flex;
     align-items: flex-end;
+
     p {
+      font-family: "Mania", sans-serif;
       font-size: 91px;
       font-weight: bold;
       color: $text-color;
@@ -23,6 +25,7 @@ $text-color: #228fca;
     }
   }
   .text {
+    font-family: "PT-Sans", sans-serif;
     display: flex;
     align-items: flex-end;
     p {

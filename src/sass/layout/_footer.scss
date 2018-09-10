@@ -7,6 +7,7 @@ footer {
   padding-top: 65px;
   background-color: $footer-bg;
   .footer-col {
+    font-family: "Lato", sans-serif;
     position: relative;
     &:after {
       content: "";
@@ -30,6 +31,7 @@ footer {
   }
   button {
     margin-top: 32px;
+    font-family: "MyriadPro", sans-serif;
     &.outline {
       background: transparent;
       border: 2px solid $btn-clr;
@@ -46,6 +48,7 @@ footer {
     }
   }
   .social {
+    font-family: "PT-Sans", sans-serif;
     p {
       font-size: 15px;
       color: #000;
@@ -71,14 +74,18 @@ footer {
   }
   .bottom-footer {
     font-size: 15px;
-    font-weight: 300;
-    color: #696969;
+    font-weight: 100;
+
+    font-family: "Lato-Light", sans-serif;
     span {
       color: #06425d;
       font-weight: bold;
     }
     a {
       text-decoration: underline;
+      color: #696969;
+    }
+    p {
       color: #696969;
     }
   }

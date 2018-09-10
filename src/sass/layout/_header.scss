@@ -6,6 +6,7 @@ $btn-bg: #ff7200;
 header {
   min-height: 620px;
   #header-carousel {
+    font-family: "PT-Sans", sans-serif;
     .carousel-indicators {
       li {
         border-radius: 50%;
@@ -34,7 +35,7 @@ header {
           padding-top: 90px;
           color: $text-clr;
           h1 {
-            font-size: 30px;
+            font-size: 33px;
             font-weight: 700;
             letter-spacing: 1.75px;
             span {
@@ -51,6 +52,7 @@ header {
         &__btn {
           padding-top: 58px;
           button {
+            font-family: "MyriadPro", sans-serif;
             background-color: $btn-bg;
             color: $text-clr;
             font-size: 37px;
