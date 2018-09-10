@@ -6,6 +6,8 @@ $text-color: #228fca;
   background-size: inherit;
   background-repeat: no-repeat no-repeat;
   background-position: left;
+  margin-top: 40px;
+  padding-bottom: 60px;
   .section-title {
     @include sectionTitle;
   }

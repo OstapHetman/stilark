@@ -94,11 +94,101 @@ header {
       font-weight: 400;
       letter-spacing: 1.45px; }
 
+#bestseller {
+  background: url("../img/home/bestseller-bg.png");
+  background-size: inherit;
+  background-repeat: no-repeat no-repeat;
+  background-position: right; }
+  #bestseller .section-title {
+    padding: 56px 0;
+    color: #228fca;
+    letter-spacing: 2px;
+    font-size: 40px; }
+  #bestseller #carouselProduction .productionsSliderItem .card {
+    border-radius: 10px;
+    border: 2px solid #228fca;
+    max-width: 258px;
+    padding-bottom: 25px; }
+    #bestseller #carouselProduction .productionsSliderItem .card .cover {
+      padding: 20px 0;
+      border-radius: 10px 10px 0 0;
+      background-color: #f9f9f9; }
+    #bestseller #carouselProduction .productionsSliderItem .card p {
+      padding-top: 15px;
+      color: #033f5a;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.9px; }
+    #bestseller #carouselProduction .productionsSliderItem .card button {
+      background-color: #228fca;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px; }
+  #bestseller #carouselProduction .carousel-controls {
+    width: 1%;
+    opacity: 1; }
+    #bestseller #carouselProduction .carousel-controls i.fa {
+      color: #228fca;
+      font-size: 90px; }
+
+@media (min-width: 768px) {
+  .our-production .carousel-inner .active,
+  .our-production .carousel-inner .active + .carousel-item,
+  .our-production .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+    transition: all 0.5s ease-in-out; }
+  .our-production .carousel-inner .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .our-production .carousel-inner .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-production-item,
+  .our-production .carousel-inner .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-production-item + .carousel-production-item {
+    transition: none; }
+  .our-production .carousel-inner .carousel-item-next,
+  .our-production .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0); }
+  .our-production .carousel-inner .active.carousel-production-item + .carousel-production-item + .carousel-production-item + .carousel-production-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    display: none;
+    visibility: visible;
+    transition: all 1s ease-in-out; }
+  .our-production .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .our-production .carousel-item-next.carousel-item-left + .carousel-item,
+  .our-production .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .our-production .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+    /*transition: all 4s ease-in-out;*/ }
+  .our-production .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  .our-production .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .our-production .carousel-item-prev.carousel-item-right + .carousel-item,
+  .our-production .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .our-production .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+    /*transition: all 4s ease-in-out;*/ } }
+
 #order-scheme {
   background: url("../img/home/zakaz-bg.png");
   background-size: inherit;
   background-repeat: no-repeat no-repeat;
-  background-position: left; }
+  background-position: left;
+  margin-top: 40px;
+  padding-bottom: 60px; }
   #order-scheme .section-title {
     padding: 56px 0;
     color: #228fca;
