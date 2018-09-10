@@ -20,4 +20,27 @@
     color: #fff;
     border-radius: 10px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    button {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 19px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 0;
+    button {
+      font-size: 18px;
+      margin: auto;
+      display: block;
+    }
+    h2 {
+      padding-bottom: 15px;
+      text-align: center;
+      font-size: 19px;
+    }
+  }
 }

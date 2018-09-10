@@ -245,6 +245,11 @@ header {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 0; }
+  @media screen and (max-width: 575px) {
+    #order-scheme .number p {
+      font-size: 50px; }
+    #order-scheme .text p {
+      font-size: 15px; } }
 
 #get-call {
   padding: 55px 0;
@@ -261,6 +266,22 @@ header {
     background-color: #228fca;
     color: #fff;
     border-radius: 10px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #get-call button {
+      font-size: 18px; }
+    #get-call h2 {
+      font-size: 19px; } }
+  @media screen and (max-width: 767px) {
+    #get-call {
+      padding: 25px 0; }
+      #get-call button {
+        font-size: 18px;
+        margin: auto;
+        display: block; }
+      #get-call h2 {
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: 19px; } }
 
 footer {
   padding-top: 65px;

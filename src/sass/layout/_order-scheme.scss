@@ -33,4 +33,17 @@ $text-color: #228fca;
       margin-bottom: 0;
     }
   }
+
+  @media screen and (max-width: 575px) {
+    .number {
+      p {
+        font-size: 50px;
+      }
+    }
+    .text {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
 }
