@@ -1,0 +1,49 @@
+#contacts {
+  $bg-clr: #fbfbfb;
+  $main-text-clr: #000;
+  $btn-bg: #228fca;
+  $links-clr: #09445e;
+
+  padding-bottom: 65px;
+  background-color: $bg-clr;
+  h1 {
+    @include sectionTitle;
+  }
+  .contacts {
+    &__info {
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          img {
+            max-width: 48px;
+          }
+          ul {
+            padding-left: 15px;
+            li {
+              font-family: "Lato", sans-serif;
+              font-weight: bold;
+              font-size: 20px;
+              letter-spacing: 1px;
+              color: $links-clr;
+              a {
+                color: $links-clr;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__button {
+      a {
+        background-color: $btn-bg;
+        color: #fff;
+        border-radius: 10px;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.73px;
+      }
+    }
+  }
+}
