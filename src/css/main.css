@@ -716,3 +716,24 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.73px; }
+
+#about-company {
+  padding-bottom: 65px;
+  background-color: #fbfbfb; }
+  #about-company h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    padding: 56px 0;
+    color: #228fca;
+    letter-spacing: 2px;
+    font-size: 40px; }
+    @media screen and (max-width: 576px) {
+      #about-company h1 {
+        font-size: 28px; } }
+  #about-company .about__text p {
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1.05px;
+    color: #000;
+    text-align: justify; }
