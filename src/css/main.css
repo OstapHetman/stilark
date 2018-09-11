@@ -18,11 +18,70 @@
   font-family: "Mania";
   src: url("../fonts/Mania/copyfonts.com_mania-oblique-opentype.ttf") format("truetype"); }
 
+.gradient-animation:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.7) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1.2s infinite; }
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%; }
+  to {
+    -webkit-mask-position: -50%; } }
+
+.shine-btn {
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #0694ea, #004d80, #228fca);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #08425d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
 nav.navbar {
   font-family: "PT-Sans", sans-serif; }
   nav.navbar.second-navbar {
     background-color: #f8f8f8;
-    border-top: 2px #d6d6d6 solid; }
+    border-top: 2px #eaeaea solid; }
     nav.navbar.second-navbar ul.navbar-nav li:first-child a {
       background-color: #228fca;
       color: #fff; }
@@ -44,17 +103,23 @@ nav.navbar {
         color: #228fca;
         font-size: 17px;
         font-weight: 400;
-        letter-spacing: 0.85px; }
+        letter-spacing: 0.85px;
+        transition: 1s ease; }
+        nav.navbar ul.navbar-nav li a.btn.transition-btn:hover {
+          color: #fff;
+          background: #228fca; }
     nav.navbar ul.navbar-nav li.social p {
       font-size: 15px;
       color: #000;
       font-style: italic; }
     nav.navbar ul.navbar-nav li.social a {
       font-size: 12px;
-      text-decoration: underline;
+      border-bottom: 1px solid #033f5a;
       color: #033f5a;
       font-style: italic;
       font-weight: normal; }
+      nav.navbar ul.navbar-nav li.social a:hover {
+        text-decoration: none; }
   @media screen and (max-width: 991px) {
     nav.navbar .navbar-toggler:focus,
     nav.navbar .navbar-toggler:hover {
@@ -137,7 +202,10 @@ header {
             font-size: 37px;
             letter-spacing: 1.85px;
             font-weight: 400;
-            border-radius: 10px; }
+            border-radius: 10px;
+            transition: 0.75s ease; }
+            header #header-carousel .carousel-item .left-side__btn button:hover {
+              background-color: #ff4700; }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     header {
       min-height: unset; }
@@ -257,23 +325,34 @@ header {
       #catalog .catalog-title {
         font-size: 28px; } }
   #catalog .catalog a {
+    position: relative;
     min-height: 282px;
     height: 100%;
     width: 267px;
     border-radius: 10px;
-    border: 3px solid #f2efef; }
+    border: 3px solid #f2efef;
+    transition: 0.5s ease-in-out; }
+    #catalog .catalog a:hover {
+      text-decoration: none;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #f2efef; }
   #catalog .catalog__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
     #catalog .catalog__item-text {
+      position: relative;
       font-family: "Lato", sans-serif;
       padding-top: 30px;
       font-size: 20px;
       color: #08425d;
       font-weight: bold;
       letter-spacing: 1px; }
+  @media screen and (max-width: 575px) {
+    #catalog .catalog a:hover {
+      transform: unset;
+      box-shadow: unset; } }
 
 #why-we {
   min-height: 480px;
@@ -543,23 +622,31 @@ footer {
       right: 7%;
       position: absolute; }
   footer ul li a {
+    position: relative;
     color: #696969;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 0.75px; }
+    footer ul li a:hover {
+      text-decoration: none;
+      color: #696969; }
   footer button {
     margin-top: 32px;
     font-family: "MyriadPro", sans-serif; }
-    footer button.outline, footer button.default {
-      background: transparent;
+    footer button.outline, footer button.default-btn {
+      background-color: transparent;
       border: 2px solid #228fca;
       border-radius: 10px;
       color: #228fca;
       font-size: 17px;
       font-weight: 400;
-      letter-spacing: 0.85px; }
-    footer button.default {
-      background: #228fca;
+      letter-spacing: 0.85px;
+      transition: 1s ease; }
+      footer button.outline:hover, footer button.default-btn:hover {
+        color: #fff;
+        background: #228fca; }
+    footer button.default-btn {
+      background-color: #228fca;
       color: #fff; }
   footer .social {
     font-family: "PT-Sans", sans-serif; }
@@ -569,9 +656,11 @@ footer {
       font-style: italic; }
     footer .social a {
       font-size: 12px;
-      text-decoration: underline;
+      border-bottom: 1px solid #033f5a;
       color: #033f5a;
       font-style: italic; }
+      footer .social a:hover {
+        text-decoration: none; }
   footer .fb {
     color: #228fca; }
     footer .fb h2 {
@@ -593,12 +682,12 @@ footer {
     footer .bottom-footer p {
       color: #696969; }
   @media screen and (max-width: 767px) {
-    footer button.outline, footer button.default {
+    footer button.outline, footer button.default-btn {
       font-size: 14px; }
     footer button.default {
       font-size: 14px; } }
   @media screen and (max-width: 575px) {
-    footer button.outline, footer button.default {
+    footer button.outline, footer button.default-btn {
       margin-left: auto;
       margin-right: auto; }
     footer button.default {

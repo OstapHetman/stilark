@@ -59,6 +59,10 @@ header {
             letter-spacing: 1.85px;
             font-weight: 400;
             border-radius: 10px;
+            transition: 0.75s ease;
+            &:hover {
+              background-color: #ff4700;
+            }
           }
         }
       }
