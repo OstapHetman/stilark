@@ -323,11 +323,11 @@ header {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #catalog .catalog-title {
+        padding: 25px 0;
         font-size: 28px; } }
   #catalog .catalog a {
     position: relative;
     min-height: 282px;
-    height: 100%;
     width: 267px;
     border-radius: 10px;
     border: 3px solid #f2efef;
@@ -356,7 +356,6 @@ header {
 
 #why-we {
   min-height: 480px;
-  height: 100%;
   background: url("../img/home/why-we_bg.png");
   background-size: cover;
   background-repeat: no-repeat no-repeat; }
@@ -370,6 +369,7 @@ header {
     color: #fff; }
     @media screen and (max-width: 576px) {
       #why-we .section-title {
+        padding: 25px 0;
         font-size: 28px; } }
   #why-we .why__text p {
     font-family: "Lato", sans-serif;
@@ -405,6 +405,7 @@ header {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #bestseller .section-title {
+        padding: 25px 0;
         font-size: 28px; } }
   #bestseller #carouselProduction .productionsSliderItem .card {
     border-radius: 10px;
@@ -544,6 +545,7 @@ header {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #order-scheme .section-title {
+        padding: 25px 0;
         font-size: 28px; } }
   #order-scheme .number {
     display: flex;
@@ -715,6 +717,7 @@ footer {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #order h1 {
+        padding: 25px 0;
         font-size: 28px; } }
   #order .order__payment h4 {
     font-family: "Lato", sans-serif;
@@ -767,6 +770,7 @@ footer {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #delivery h1 {
+        padding: 25px 0;
         font-size: 28px; } }
   #delivery .delivery__methods h4 {
     font-family: "Lato", sans-serif;
@@ -818,6 +822,7 @@ footer {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #about-company h1 {
+        padding: 25px 0;
         font-size: 28px; } }
   #about-company .about__text p {
     font-family: "Lato", sans-serif;
@@ -826,6 +831,9 @@ footer {
     letter-spacing: 1.05px;
     color: #000;
     text-align: justify; }
+  @media screen and (max-width: 575px) {
+    #about-company .about__text p {
+      font-size: 16px; } }
 
 #price {
   padding-bottom: 65px;
@@ -839,6 +847,7 @@ footer {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #price h1 {
+        padding: 25px 0;
         font-size: 28px; } }
   #price .price__text p {
     font-family: "Lato", sans-serif;
@@ -855,6 +864,9 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.73px; }
+  @media screen and (max-width: 575px) {
+    #price .price__text p {
+      font-size: 16px; } }
 
 #contacts {
   padding-bottom: 65px;
@@ -868,6 +880,7 @@ footer {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #contacts h1 {
+        padding: 25px 0;
         font-size: 28px; } }
   #contacts .contacts__info ul li {
     display: flex;
@@ -892,6 +905,37 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.73px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #contacts .contacts__info ul li img {
+      max-width: 30px; }
+    #contacts .contacts__info ul li ul {
+      padding-left: 15px; }
+      #contacts .contacts__info ul li ul li {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #09445e; }
+        #contacts .contacts__info ul li ul li a {
+          color: #09445e; } }
+  @media screen and (max-width: 767px) {
+    #contacts .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #contacts .contacts__info ul li img {
+        max-width: 30px; }
+      #contacts .contacts__info ul li ul {
+        padding-left: 15px; }
+        #contacts .contacts__info ul li ul li {
+          font-family: "Lato", sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          letter-spacing: 1px;
+          color: #09445e; }
+          #contacts .contacts__info ul li ul li a {
+            color: #09445e; } }
 
 #details {
   padding-bottom: 65px;
@@ -905,6 +949,7 @@ footer {
     font-size: 40px; }
     @media screen and (max-width: 576px) {
       #details h1 {
+        padding: 25px 0;
         font-size: 28px; } }
   #details #detailsCarousel .carousel-item {
     background-color: #fff;
@@ -985,3 +1030,67 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.73px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    #details #detailsCarousel .controls i.fa {
+      padding: 15px 41px; }
+    #details .details__info .in-stock {
+      padding-top: 25px; }
+      #details .details__info .in-stock span {
+        font-size: 16px; }
+    #details .details__info .not-in-stock {
+      padding-top: 15px; }
+      #details .details__info .not-in-stock span {
+        font-size: 16px; }
+    #details .details__info .price p {
+      font-size: 28px; }
+      #details .details__info .price p span {
+        font-size: 23px; }
+    #details .details__info .button .btn {
+      font-size: 16px; }
+    #details .details__info .location ul li:first-child {
+      margin-right: 25px; }
+    #details .details__info .location p {
+      font-size: 15px; }
+    #details .details__info .location a {
+      font-size: 12px; }
+    #details .details__info .delivery-order ul li a {
+      font-size: 15px; }
+    #details .details .description p {
+      font-size: 17px; }
+    #details .details .go-to a {
+      font-size: 18px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #details #detailsCarousel .controls i.fa {
+      padding: 12px 27px; } }
+  @media screen and (max-width: 767px) {
+    #details .details__info .in-stock {
+      padding-top: 25px; }
+      #details .details__info .in-stock span {
+        font-size: 16px; }
+    #details .details__info .not-in-stock {
+      padding-top: 15px; }
+      #details .details__info .not-in-stock span {
+        font-size: 16px; }
+    #details .details__info .price p {
+      font-size: 28px; }
+      #details .details__info .price p span {
+        font-size: 23px; }
+    #details .details__info .button .btn {
+      font-size: 16px; }
+    #details .details__info .location ul {
+      flex-wrap: wrap; }
+      #details .details__info .location ul li:first-child {
+        margin-right: 25px; }
+    #details .details__info .location p {
+      font-size: 15px; }
+    #details .details__info .location a {
+      font-size: 12px; }
+    #details .details__info .delivery-order ul li a {
+      font-size: 12px; }
+    #details .details .description p {
+      font-size: 14px; }
+    #details .details .go-to a {
+      font-size: 18px; } }
+  @media screen and (max-width: 453px) {
+    #details .details__info .location ul li:nth-child(2) {
+      margin-top: 20px; } }
