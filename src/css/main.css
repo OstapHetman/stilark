@@ -325,17 +325,34 @@ header {
       #catalog .catalog-title {
         padding: 25px 0;
         font-size: 28px; } }
-  #catalog .catalog a {
+  #catalog .catalog .catalog-card .catalog__item-text p {
+    font-size: 15px;
+    letter-spacing: 0.75px; }
+  #catalog .catalog a.link,
+  #catalog .catalog .catalog-card {
     position: relative;
     min-height: 282px;
     width: 267px;
     border-radius: 10px;
     border: 3px solid #f2efef;
     transition: 0.5s ease-in-out; }
-    #catalog .catalog a:hover {
+    #catalog .catalog a.link:hover,
+    #catalog .catalog .catalog-card:hover {
       text-decoration: none;
       transform: scale(1.1);
       box-shadow: 0 0 15px #f2efef; }
+  #catalog .catalog__item-button {
+    margin: 10px 0; }
+    #catalog .catalog__item-button a {
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: #228fca;
+      color: #fff;
+      border-radius: 10px;
+      font-family: "MyriadPro", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.85px; }
   #catalog .catalog__item {
     display: flex;
     flex-direction: column;
@@ -350,7 +367,8 @@ header {
       font-weight: bold;
       letter-spacing: 1px; }
   @media screen and (max-width: 575px) {
-    #catalog .catalog a:hover {
+    #catalog .catalog a.link:hover,
+    #catalog .catalog .catalog-card:hover {
       transform: unset;
       box-shadow: unset; } }
 
