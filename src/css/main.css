@@ -105,9 +105,16 @@ nav.navbar {
         font-weight: 400;
         letter-spacing: 0.85px;
         transition: 1s ease; }
+        nav.navbar ul.navbar-nav li a.btn.shine-btn {
+          border: unset; }
         nav.navbar ul.navbar-nav li a.btn.transition-btn:hover {
           color: #fff;
           background: #228fca; }
+    nav.navbar ul.navbar-nav li.social div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start; }
     nav.navbar ul.navbar-nav li.social p {
       font-size: 15px;
       color: #000;
@@ -131,17 +138,17 @@ nav.navbar {
       right: 0px;
       left: 0px;
       z-index: 100;
-      height: 100vh; }
+      height: 80vh;
+      transition: all 0.5s; }
+      nav.navbar .navbar-collapse ul {
+        transition: all 0.5s;
+        height: 100%;
+        justify-content: center; }
+        nav.navbar .navbar-collapse ul .dropdown-menu {
+          background-color: unset;
+          border: unset; }
     nav.navbar.second-navbar {
-      padding: 0 !important; }
-      nav.navbar.second-navbar .navbar-collapse {
-        padding: 0.5rem 1rem;
-        position: absolute;
-        top: 210px;
-        right: 0;
-        left: 0px;
-        z-index: 100;
-        height: 100vh; } }
+      display: none; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     nav.navbar a.navbar-brand img {
       max-width: 125px; }
@@ -286,6 +293,8 @@ header {
   @media screen and (max-width: 575px) {
     header {
       min-height: unset; }
+      header #header-carousel ol.carousel-indicators {
+        display: none; }
       header #header-carousel .carousel-control i.fa {
         font-size: 60px; }
       header #header-carousel .carousel-item {
@@ -307,10 +316,9 @@ header {
             header #header-carousel .carousel-item .left-side__head-text p {
               font-size: 12px; }
           header #header-carousel .carousel-item .left-side__btn {
-            display: none;
-            padding-top: 15px; }
+            padding-top: 0px; }
             header #header-carousel .carousel-item .left-side__btn button {
-              font-size: 15px; } }
+              font-size: 12px; } }
 
 #catalog {
   padding-bottom: 23px; }
@@ -326,7 +334,7 @@ header {
         padding: 25px 0;
         font-size: 28px; } }
   #catalog .catalog .catalog-card .catalog__item-text p {
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 0.75px; }
   #catalog .catalog a.link,
   #catalog .catalog .catalog-card {
@@ -362,7 +370,7 @@ header {
       position: relative;
       font-family: "Lato", sans-serif;
       padding-top: 30px;
-      font-size: 20px;
+      font-size: 15px;
       color: #08425d;
       font-weight: bold;
       letter-spacing: 1px; }
@@ -668,6 +676,8 @@ footer {
     footer button.default-btn {
       background-color: #228fca;
       color: #fff; }
+      footer button.default-btn.shine-btn {
+        border: unset; }
   footer .social {
     font-family: "PT-Sans", sans-serif; }
     footer .social p {
@@ -843,9 +853,8 @@ footer {
         padding: 25px 0;
         font-size: 28px; } }
   #about-company .about__text p {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato-Light", sans-serif;
     font-size: 21px;
-    font-weight: bold;
     letter-spacing: 1.05px;
     color: #000;
     text-align: justify; }
@@ -868,9 +877,8 @@ footer {
         padding: 25px 0;
         font-size: 28px; } }
   #price .price__text p {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato-Light", sans-serif;
     font-size: 21px;
-    font-weight: bold;
     letter-spacing: 1.05px;
     color: #000;
     text-align: justify; }
@@ -1033,7 +1041,10 @@ footer {
     font-size: 15px;
     font-style: italic;
     letter-spacing: 0.75px;
-    font-weight: bold; }
+    font-weight: bold;
+    padding: 5px 0; }
+    #details .details__info .delivery-order ul li a:hover {
+      text-decoration: none; }
   #details .details .description p {
     font-family: "Lato-Light", sans-serif;
     font-size: 17px;

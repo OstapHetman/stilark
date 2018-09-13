@@ -54,6 +54,9 @@ footer {
     &.default-btn {
       @extend .outline;
       background-color: $btn-clr;
+      &.shine-btn {
+        border: unset;
+      }
       color: #fff;
     }
   }

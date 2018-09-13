@@ -38,6 +38,9 @@ nav.navbar {
           font-family: "MyriadPro", sans-serif;
           border: 2px solid $btn-clr;
           border-radius: 10px;
+          &.shine-btn {
+            border: unset;
+          }
           color: $btn-clr;
           font-size: 17px;
           font-weight: 400;
@@ -52,6 +55,12 @@ nav.navbar {
         }
       }
       &.social {
+        div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: start;
+        }
         p {
           font-size: 15px;
           color: #000;
@@ -83,19 +92,30 @@ nav.navbar {
       right: 0px;
       left: 0px;
       z-index: 100;
-      height: 100vh;
+      height: 80vh;
+      transition: all 0.5s;
+      ul {
+        transition: all 0.5s;
+        height: 100%;
+        justify-content: center;
+        .dropdown-menu {
+          background-color: unset;
+          border: unset;
+        }
+      }
     }
     &.second-navbar {
-      padding: 0 !important;
-      .navbar-collapse {
-        padding: 0.5rem 1rem;
-        position: absolute;
-        top: 210px;
-        right: 0;
-        left: 0px;
-        z-index: 100;
-        height: 100vh;
-      }
+      display: none;
+      // padding: 0 !important;
+      // .navbar-collapse {
+      //   padding: 0.5rem 1rem;
+      //   position: absolute;
+      //   top: 210px;
+      //   right: 0;
+      //   left: 0px;
+      //   z-index: 100;
+      //   height: 100vh;
+      // }
     }
   }
 
