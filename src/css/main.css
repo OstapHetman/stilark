@@ -77,6 +77,113 @@
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+#getCallModal.show {
+  display: flex !important; }
+  #getCallModal.show .modal-dialog {
+    margin: auto; }
+
+#getCallModal .modal-header {
+  border-bottom: unset;
+  padding: 0; }
+  #getCallModal .modal-header button {
+    color: #033f5a;
+    opacity: 1;
+    font-size: 40px; }
+
+#getCallModal .modal-content {
+  padding: 20px 30px;
+  border-radius: unset;
+  border: 8px #033f5a solid; }
+
+#getCallModal .modal-body {
+  padding-top: 0; }
+  #getCallModal .modal-body input {
+    background-color: #f8f8f8;
+    border: unset;
+    border-radius: 10px;
+    padding: 25px 35px;
+    margin-top: 30px;
+    width: 100%;
+    margin: 0 auto; }
+    #getCallModal .modal-body input:focus {
+      box-shadow: unset; }
+    #getCallModal .modal-body input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #ced4da;
+      font-size: em(15); }
+    #getCallModal .modal-body input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #ced4da;
+      font-size: em(15); }
+    #getCallModal .modal-body input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #ced4da;
+      font-size: em(15); }
+    #getCallModal .modal-body input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #ced4da;
+      font-size: em(15); }
+  #getCallModal .modal-body h1 {
+    font-size: 28px;
+    color: #033f5a;
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold; }
+  #getCallModal .modal-body p {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold;
+    color: #033f5a; }
+  #getCallModal .modal-body input[type="submit"] {
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #033f5a;
+    color: #fff;
+    padding: 10px 50px; }
+
+@media screen and (max-width: 575px) {
+  #getCallModal .modal-content {
+    padding: 20px 10px;
+    border-radius: unset;
+    border: unset; }
+  #getCallModal .modal-body h1 {
+    font-size: 22px; }
+  #getCallModal .modal-body p {
+    font-size: 12px; }
+  #getCallModal .modal-body input[type="submit"] {
+    font-size: 14px; } }
+
+#getMap.show {
+  display: flex !important; }
+  #getMap.show .modal-dialog {
+    margin: auto; }
+
+#getMap .modal-dialog {
+  width: 100%; }
+
+#getMap .modal-header {
+  background-color: #033f5a;
+  border-bottom: unset;
+  align-items: center; }
+  #getMap .modal-header h5 {
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff; }
+  #getMap .modal-header button {
+    color: #fff;
+    opacity: 1; }
+    #getMap .modal-header button span {
+      display: block;
+      margin-bottom: 10px; }
+
+#getMap .modal-body {
+  padding: 0; }
+  #getMap .modal-body iframe {
+    width: 100%;
+    height: 450px; }
+
 nav.navbar {
   font-family: "PT-Sans", sans-serif; }
   nav.navbar.second-navbar {

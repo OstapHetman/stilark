@@ -163,7 +163,10 @@
                                 <p>Цена: <span>2 855,98 грн.</span></p>
                             </div>
                             <div class="button mt-4">
-                                <button class="btn">Оформить заявку</button>
+                                <button class="btn" id="buy-product" data-productName="Задвижка чуг. шиберная РУ10 ДУ50"
+                                    data-productPrice="2 855,98 грн" data-toggle="modal" data-target="#getCallModal">
+                                    Оформить заявку
+                                </button>
                             </div>
                             <div class="location mt-4">
                                 <ul class="list-unstyled d-flex justify-content-lg-between justify-content-xl-between mb-0">
@@ -351,6 +354,45 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="getCallModal" tabindex="-1" role="dialog" aria-labelledby="getCallModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">Запросить счет</h1>
+                    <p class="text-center mb-4">Введите ваше имя и номер телефона,<br> специалист компании свяжется
+                        с вами и ответит на ваши вопросы</p>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Укажите имя">
+                            </div>
+                            <div class="form-group mb-4">
+                                <input class="form-control" type="text" name="phone" id="name" placeholder="Укажите номер телефона"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="product-name" id="product-name">
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="product-price" id="product-price">
+                            </div>
+                            <div class="form-group d-flex justify-content-center">
+                                <input class="btn" type="submit" value="Позвоните мне">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

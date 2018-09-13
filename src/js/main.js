@@ -21,3 +21,19 @@ $("#carouselProduction").on("slide.bs.carousel", function(e) {
     }
   }
 });
+
+if (document.getElementById("buy-product")) {
+  const btn = document.getElementById("buy-product");
+
+  btn.addEventListener("click", addValueToHiddenInput);
+
+  function addValueToHiddenInput() {
+    const productName = this.getAttribute("data-productName");
+    const productPrice = this.getAttribute("data-productPrice");
+    const nameInput = document.getElementById("product-name");
+    const priceInput = document.getElementById("product-price");
+
+    nameInput.value = productName;
+    priceInput.value = productPrice;
+  }
+}
