@@ -16,7 +16,9 @@
                                         <img class="img-fluid mx-auto d-block" src="<?php the_sub_field('image', 2); ?>" alt="slide 1">
                                     </div>
                                     <p><?php the_sub_field('text', 2); ?></p>
-                                    <button class="shine-btn btn mx-auto" data-toggle="modal" data-toggle="modal" data-target="#getCallModal"><?php the_sub_field('btn_text', 2); ?></button>
+                                    <button class="shine-btn btn mx-auto buy-bestseller" data-productName="<?php the_sub_field('text', 2); ?>" data-toggle="modal" data-toggle="modal" data-target="#buyBestSeller">
+                                        <?php the_sub_field('btn_text', 2); ?>
+                                    </button>
                                 </div>
                             </div>
                         <?php endwhile; endif;?>
@@ -35,3 +37,4 @@
         </div>
     </div>
 </section>
+<?php get_template_part( 'templates/modals/template-modalBestseller' ); ?>

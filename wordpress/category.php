@@ -8,6 +8,11 @@
   $args = array( 'child_of' => $current_cat->term_id, "hide_empty" => 0);
   $categories = get_categories( $args );
 ?>
+
+    <!-- Start thx msg -->
+    <?php get_template_part( 'templates/template-thxMessage' ); ?>
+    <!-- End thx msg -->
+    
     <!-- Start navigation -->
     <?php get_template_part( 'templates/template-navigation' ); ?>
     <!-- End Navigation -->

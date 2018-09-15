@@ -4,6 +4,10 @@
 */
 get_header();
 ?>
+    <!-- Start thx msg -->
+    <?php get_template_part( 'templates/template-thxMessage' ); ?>
+    <!-- End thx msg -->
+
     <!-- Start navigation -->
     <?php get_template_part( 'templates/template-navigation' ); ?>
     <!-- End Navigation -->
@@ -29,7 +33,9 @@ get_header();
     <!-- End SECTION: Order scheme -->
 
     <!-- Start Modals -->
-    <?php get_template_part( 'templates/template-modals' ); ?>
+    <?php get_template_part( 'templates/modals/template-modalHeaderFooter' ); ?>
+    <?php get_template_part( 'templates/modals/template-modalCarousel' ); ?>
+  
     <!-- End Modals -->
 
 <?php get_footer(); ?>    

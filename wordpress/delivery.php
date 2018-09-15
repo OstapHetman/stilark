@@ -5,6 +5,10 @@
 get_header();
 ?>
 
+    <!-- Start thx msg -->
+    <?php get_template_part( 'templates/template-thxMessage' ); ?>
+    <!-- End thx msg -->
+    
      <!-- Start navigation -->
      <?php get_template_part( 'templates/template-navigation' ); ?>
     <!-- End Navigation -->
@@ -103,7 +107,7 @@ get_header();
                     </div>
 
                     <div class="delivery__feedback mt-5">
-                        <a href="#" class="btn"><?php the_field('delivery_btn'); ?></a>
+                        <a href="#" class="btn" data-toggle="modal" data-target="#feedback"><?php the_field('delivery_btn'); ?></a>
                     </div>
                 </div>
             </div>
@@ -114,5 +118,9 @@ get_header();
     <!-- Start SECTION: Why We  -->
     <?php get_template_part( 'templates/template-whyWe' ); ?>
     <!-- End SECTION: Why We -->
+
+    <!-- Start Modal -->
+    <?php get_template_part( 'templates/modals/template-modalFeedback' ); ?>
+    <!-- End Modal -->
 
    <?php get_footer(); ?>  

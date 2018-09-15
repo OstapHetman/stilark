@@ -2,9 +2,6 @@
 <header>
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <!-- <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#header-carousel" data-slide-to="1"></li>
-            <li data-target="#header-carousel" data-slide-to="2"></li> -->
         </ol>
         <div class="carousel-inner">
         
@@ -24,7 +21,7 @@
                             <p><?php the_sub_field('additional_text'); ?></p>
                         </div>
                         <div class="left-side__btn">
-                            <button class="btn px-4" data-toggle="modal" data-target="#getCallModal">
+                            <button class="btn px-4" data-toggle="modal" data-target="#uznatPodrobnee">
                                 <?php the_sub_field('btn_text'); ?>
                             </button>
                         </div>

@@ -19,10 +19,11 @@
             <?php endwhile; endif;?>       
 
             <div class="col-12 button">
-                <button class="shine-btn btn d-block mx-auto px-4" data-toggle="modal" data-target="#getCallModal">
+                <button class="shine-btn btn d-block mx-auto px-4" data-toggle="modal" data-target="#whyWe">
                     <?php the_field('why_btn', 2); ?>
                 </button>
             </div>
         </div>
     </div>
 </section>
+<?php get_template_part( 'templates/modals/template-modalWhyWe' ); ?>

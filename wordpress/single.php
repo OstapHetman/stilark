@@ -4,7 +4,9 @@
 */
 get_header();
 ?>
-
+    <!-- Start thx msg -->
+    <?php get_template_part( 'templates/template-thxMessage' ); ?>
+    <!-- End thx msg -->
     <!-- Start navigation -->
     <?php get_template_part( 'templates/template-navigation' ); ?>
     <!-- End Navigation -->
@@ -59,7 +61,7 @@ get_header();
                                 <p>Цена: <span><?php the_field('product_price'); ?> грн.</span></p>
                             </div>
                             <div class="button mt-4">
-                                <button class="btn" id="buy-product" data-productName="Задвижка чуг. шиберная РУ10 ДУ50" data-productPrice="2 855,98 грн" data-toggle="modal" data-target="#getCallModal">
+                                <button class="btn" id="buy-product" data-productName="<?php the_title(); ?>" data-productPrice="<?php the_field('product_price'); ?>" data-toggle="modal" data-target="#buyProduct">
                                   <?php the_field('product_btn'); ?>
                                 </button>
                             </div>
@@ -88,11 +90,15 @@ get_header();
                             <div class="delivery-order mt-4">
                                 <ul class="list-unstyled d-flex mb-0">
                                     <li>
-                                        <a class="gradient-animation" href="#"><img class="pr-2" src="<?php bloginfo('template_url'); ?>/img/home/menu-icon-5.png" alt="menu-icon">Доставка товара
+                                        <a class="gradient-animation" href="<?php echo home_url(); ?>/dostavka-tovara/">
+                                            <img class="pr-2" src="<?php echo get_theme_mod('signle_product_icon1', get_bloginfo('template_url').'/img/home/menu-icon-5.png'); ?>" alt="menu-icon">
+                                            <?php echo get_theme_mod('icon_text1', 'Доставка товара'); ?>
                                         </a>
                                     </li>
                                     <li class="ml-5">
-                                        <a class="gradient-animation" href="#"><img class="pr-2" src="<?php bloginfo('template_url'); ?>/img/home/menu-icon-6.png" alt="menu-icon">Заказ товара
+                                        <a class="gradient-animation" href="<?php echo home_url(); ?>//zakaz-tovara/">
+                                            <img class="pr-2" src="<?php echo get_theme_mod('signle_product_icon2', get_bloginfo('template_url').'/img/home/menu-icon-6.png'); ?>" alt="menu-icon">
+                                            <?php echo get_theme_mod('icon_text2', 'Заказ товара'); ?>
                                         </a>
                                     </li>
                                 </ul>
@@ -104,7 +110,7 @@ get_header();
                             <?php endwhile; endif;?>
                         </div>
                         <div class="col-12 go-to mt-5">
-                            <a href="index.html#catalog" class="btn"><?php the_field('product_btn_2'); ?></a>
+                            <a href="<?php echo home_url(); ?>#catalog" class="btn"><?php the_field('product_btn_2'); ?></a>
                         </div>
                     </div>
                 </div>
@@ -116,5 +122,9 @@ get_header();
     <!-- Start SECTION: Why We  -->
     <?php get_template_part( 'templates/template-whyWe' ); ?>
     <!-- End SECTION: Why We -->
+
+    <!-- Start navigation -->
+    <?php get_template_part( 'templates/modals/template-modalProduct' ); ?>
+    <!-- End Navigation -->
 
     <?php get_footer(); ?>  

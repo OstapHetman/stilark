@@ -24,7 +24,7 @@
                     ]);
                 ?>
                 <li class="nav-item">
-                    <a class=" transition-btn btn px-2 px-xl-4" href="#" data-toggle="modal" data-target="#getCallModal">
+                    <a class=" transition-btn btn px-2 px-xl-4" href="#" data-toggle="modal" data-target="#zaprosytSchet">
                         <?php the_field('nav_primary_btn', 2); ?>
                     </a>
                 </li>
@@ -38,7 +38,7 @@
         <div class="navbars collapse navbar-collapse">
             <ul class="navbar-nav d-flex align-items-center w-100 justify-content-between">
                 <li class="nav-item">
-                    <a class="shine-btn btn px-4" href="#" data-toggle="modal" data-target="#getCallModal">
+                    <a class="shine-btn btn px-4" href="#" data-toggle="modal" data-target="#spetsPredlozhenye">
                         <?php the_field('nav_secondary_btn', 2); ?>
                     </a>
                 </li>
@@ -72,7 +72,7 @@
                     </div>
                     <div>
                         <p class="mb-0"><?php the_field('nav_phone', 2); ?></p>
-                        <a href="#" data-toggle="modal" data-target="#getCallModal"><?php the_field('nav_phone_btn_', 2); ?></a>
+                        <a href="#" data-toggle="modal" data-target="#zakazatObratnyiZvonok"><?php the_field('nav_phone_btn_', 2); ?></a>
                     </div>
                 </li>
 

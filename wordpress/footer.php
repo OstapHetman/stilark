@@ -6,7 +6,7 @@
                 <h2 class="mb-0"><?php the_field('call_text', 2); ?></h2>
             </div>
             <div class="col-md-4 col-lg-4 col-xl-3">
-                <button class="shine-btn btn px-4" data-toggle="modal" data-target="#getCallModal"><?php the_field('call_btn', 2); ?></button>
+                <button class="shine-btn btn px-4" data-toggle="modal" data-target="#freeConsult"><?php the_field('call_btn', 2); ?></button>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
                     ]);
                 ?>
                 </ul>
-                <button class="btn outline w-75"><?php the_field('nav_primary_btn', 2); ?></button>
+                <button class="btn outline w-75" data-toggle="modal" data-target="#zaprosytSchet"><?php the_field('nav_primary_btn', 2); ?></button>
             </div>
             <div class="col-sm-6 col-lg-4 col-xl-3 mb-5 d-flex flex-column justify-content-between footer-col">
                 <ul class="list-unstyled mb-0 footer-menu">
@@ -55,7 +55,7 @@
                     ]);
                 ?>
                 </ul>
-                <button class="shine-btn btn default-btn w-75"><?php the_field('nav_secondary_btn', 2); ?></button>
+                <button class="shine-btn btn default-btn w-75" data-toggle="modal" data-target="#spetsPredlozhenye"><?php the_field('nav_secondary_btn', 2); ?></button>
             </div>
             <div class="col-sm-6 col-lg-4 col-xl-3 mb-5 d-flex align-items-center social footer-col">
                 <ul class="list-unstyled mb-0">
@@ -74,7 +74,7 @@
                         </div>
                         <div>
                             <p class="mb-0"><?php the_field('nav_phone', 2); ?></p>
-                            <a href="#" data-toggle="modal" data-target="#getCallModal"><?php the_field('nav_phone_btn_', 2); ?></a>
+                            <a href="#" data-toggle="modal" data-target="#zakazatObratnyiZvonok"><?php the_field('nav_phone_btn_', 2); ?></a>
                         </div>
                     </li>
                 </ul>
@@ -98,6 +98,11 @@
     </div>
 </footer>
 <!-- End Footer -->
+
+<!-- Start Modals -->
+    <?php get_template_part( 'templates/modals/template-modalHeaderFooter' ); ?>
+    <?php get_template_part( 'templates/modals/template-modalFreeConsult' ); ?>
+<!-- End Modals -->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

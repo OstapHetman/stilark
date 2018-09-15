@@ -4,10 +4,13 @@
 */
 get_header();
 ?>
+    <!-- Start thx msg -->
+    <?php get_template_part( 'templates/template-thxMessage' ); ?>
+    <!-- End thx msg -->
 
-        <!-- Start navigation -->
-        <?php get_template_part( 'templates/template-navigation' ); ?>
-        <!-- End Navigation -->
+    <!-- Start navigation -->
+    <?php get_template_part( 'templates/template-navigation' ); ?>
+    <!-- End Navigation -->
 
     <section id="contacts">
         <div class="container">

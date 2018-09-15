@@ -36,6 +36,18 @@ This theme, like WordPress, is licensed under the GPL.
     format("truetype");
 }
 
+body {
+  max-width: 1920px !important;
+  margin: auto !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
 .gradient-animation:hover {
   -webkit-mask-image: linear-gradient(
     -75deg,
@@ -119,33 +131,34 @@ This theme, like WordPress, is licensed under the GPL.
   transform-origin: bottom left;
 }
 
-#getCallModal.show {
+.custom-modals.show {
   display: flex !important;
 }
-#getCallModal.show .modal-dialog {
+.custom-modals.show .modal-dialog {
   margin: auto;
 }
 
-#getCallModal .modal-header {
+.custom-modals .modal-header {
   border-bottom: unset;
   padding: 0;
 }
-#getCallModal .modal-header button {
+.custom-modals .modal-header button {
   color: #033f5a;
   opacity: 1;
   font-size: 40px;
 }
 
-#getCallModal .modal-content {
+.custom-modals .modal-content {
   padding: 20px 30px;
   border-radius: unset;
   border: 8px #033f5a solid;
 }
 
-#getCallModal .modal-body {
+.custom-modals .modal-body {
   padding-top: 0;
 }
-#getCallModal .modal-body input {
+.custom-modals .modal-body input,
+.custom-modals .modal-body textarea {
   background-color: #f8f8f8;
   border: unset;
   border-radius: 10px;
@@ -154,42 +167,44 @@ This theme, like WordPress, is licensed under the GPL.
   width: 100%;
   margin: 0 auto;
 }
-#getCallModal .modal-body input:focus {
+.custom-modals .modal-body input:focus,
+.custom-modals .modal-body textarea:focus {
   box-shadow: unset;
 }
-#getCallModal .modal-body input::-webkit-input-placeholder {
+.custom-modals .modal-body input::-webkit-input-placeholder,
+.custom-modals .modal-body textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #ced4da;
-  font-size: em(15);
+  font-size: 14px;
 }
-#getCallModal .modal-body input::-moz-placeholder {
+.custom-modals .modal-body input::-moz-placeholder {
   /* Firefox 19+ */
   color: #ced4da;
-  font-size: em(15);
+  font-size: 14px;
 }
-#getCallModal .modal-body input:-ms-input-placeholder {
+.custom-modals .modal-body input:-ms-input-placeholder {
   /* IE 10+ */
   color: #ced4da;
-  font-size: em(15);
+  font-size: 14px;
 }
-#getCallModal .modal-body input:-moz-placeholder {
+.custom-modals .modal-body input:-moz-placeholder {
   /* Firefox 18- */
   color: #ced4da;
-  font-size: em(15);
+  font-size: 14px;
 }
-#getCallModal .modal-body h1 {
+.custom-modals .modal-body h1 {
   font-size: 28px;
   color: #033f5a;
   font-family: "Lato-Regular", sans-serif;
   font-weight: bold;
 }
-#getCallModal .modal-body p {
+.custom-modals .modal-body p {
   font-size: 16px;
   font-family: "Lato-Regular", sans-serif;
   font-weight: bold;
   color: #033f5a;
 }
-#getCallModal .modal-body input[type="submit"] {
+.custom-modals .modal-body input[type="submit"] {
   font-family: "Lato-Regular", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -200,18 +215,18 @@ This theme, like WordPress, is licensed under the GPL.
 }
 
 @media screen and (max-width: 575px) {
-  #getCallModal .modal-content {
+  .custom-modals .modal-content {
     padding: 20px 10px;
     border-radius: unset;
     border: unset;
   }
-  #getCallModal .modal-body h1 {
+  .custom-modals .modal-body h1 {
     font-size: 22px;
   }
-  #getCallModal .modal-body p {
+  .custom-modals .modal-body p {
     font-size: 12px;
   }
-  #getCallModal .modal-body input[type="submit"] {
+  .custom-modals .modal-body input[type="submit"] {
     font-size: 14px;
   }
 }
@@ -334,7 +349,7 @@ nav.navbar ul.navbar-nav li.social a:hover {
     right: 0px;
     left: 0px;
     z-index: 100;
-    height: 80vh;
+    height: 77vh;
     transition: all 0.5s;
   }
   nav.navbar .navbar-collapse ul {
@@ -369,6 +384,12 @@ nav.navbar ul.navbar-nav li.social a:hover {
   }
 }
 @media screen and (max-width: 991px) {
+  nav.navbar ul.navbar-nav li a {
+    font-size: 13px;
+  }
+  nav.navbar ul.navbar-nav li .dropdown-menu a {
+    font-size: 12px;
+  }
   nav.navbar a.navbar-brand img {
     max-width: 100px;
   }
@@ -1706,8 +1727,8 @@ footer .bottom-footer p {
 .post-nav .pagination .page-item.active .page-link:hover {
   background-color: #033f5a;
 }
-/* Style 404 page */
 
+/* Style 404 page */
 .not-found {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1769,4 +1790,41 @@ footer .bottom-footer p {
     font-size: 0.8em;
     color: #033f5a;
   }
+}
+
+/* Thx message */
+.thankYouMsg {
+  font-family: "Lato-Regular", sans-serif;
+  position: fixed;
+  top: 10%;
+  right: 2%;
+  background-color: #228fca;
+  color: #ffff;
+  text-decoration: underline;
+  font-size: 16px;
+  display: none;
+  padding: 10px 10px 10px 10px;
+  z-index: 1050;
+  transition: all 2s ease-out;
+  border-radius: 10px;
+}
+
+.thankYouMsg p {
+  margin-bottom: 0;
+  text-align: center;
+}
+@media screen and(max-width: 575px) {
+  .thankYouMsg {
+    font-size: 12px;
+  }
+}
+
+/* Contact Form 7 */
+.form-group span.wpcf7-not-valid-tip {
+  font-family: "Lato-Light", sans-serif !important;
+  color: #f00;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  text-align: center;
 }

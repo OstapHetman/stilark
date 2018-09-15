@@ -64,6 +64,19 @@ if (document.getElementById("buy-product")) {
   }
 }
 
+if (document.getElementsByClassName("buy-bestseller")) {
+  const btns = document.querySelectorAll(".buy-bestseller");
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      const productName = e.target.getAttribute("data-productName");
+      const nameInput = document.getElementById("product-name");
+
+      nameInput.value = productName;
+    });
+  });
+}
+
 if (document.querySelectorAll(".footer-menu")) {
   const ul = document.querySelectorAll(".footer-menu");
   ul.forEach(el => {

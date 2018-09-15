@@ -4,6 +4,10 @@
 */
 get_header();
 ?>
+
+    <!-- Start thx msg -->
+    <?php get_template_part( 'templates/template-thxMessage' ); ?>
+    <!-- End thx msg -->
     <!-- Start navigation -->
         <?php get_template_part( 'templates/template-navigation' ); ?>
     <!-- End Navigation -->
@@ -27,7 +31,7 @@ get_header();
                         <?php endwhile; endif;?>
                     </div>
                     <div class="price__button text-center mt-5">
-                        <a href="#" class="btn">
+                        <a href="#" class="btn" data-toggle="modal" data-target="#praisLyst">
                         <?php the_field('price_btn'); ?>
                         </a>
                     </div>
@@ -40,5 +44,9 @@ get_header();
     <!-- Start SECTION: Why We  -->
    <?php get_template_part( 'templates/template-whyWe' ); ?>
     <!-- End SECTION: Why We -->
+
+      <!-- Start Modal -->
+      <?php get_template_part( 'templates/modals/template-modalPrice' ); ?>
+    <!-- End Modal -->
 
    <?php get_footer(); ?>  

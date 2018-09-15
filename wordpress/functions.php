@@ -138,4 +138,29 @@
   // Customizer File
   require get_template_directory(). '/includes/customizer.php';
 
+  // Redirect On Success
+  add_action( 'wp_footer', 'mycustom_wp_footer' );
+ 
+  function mycustom_wp_footer() {
+    ?>
+      <script type="text/javascript">
+          document.addEventListener( 'wpcf7mailsent', function( event ) {
+              const msg = document.getElementsByClassName('thankYouMsg')[0];
+              setTimeout(function() {
+                  $('.modal').modal('hide');
+                  
+              }, 500);
+
+                setTimeout(function() {
+                      msg.style.display="flex";
+              }, 700);
+
+                 setTimeout(function() {
+                      msg.style.display="none";
+              }, 2500);
+              
+          }, false );
+      </script>
+    <?
+  }
 ?>
