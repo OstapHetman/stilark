@@ -1,0 +1,45 @@
+body {
+  background: #fff;
+}
+
+body.login div#login {
+  width: unset;
+  max-width: 450px;
+  height: auto;
+}
+
+body.login div#login h1 a {
+  background-size: contain;
+  width: 50%;
+}
+
+body.login div#login form#loginform {
+  font-family: "Lato-Light", sans-serif;
+  border: 5px #033f5a solid;
+  padding: 70px 70px;
+}
+
+body.login div#login form#loginform input {
+  background-color: #f1f1f1;
+  border: unset;
+  border-radius: 30px;
+  padding: 12px 35px;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+.login form .forgetmenot label {
+  display: block !important;
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+}
+
+body.login div#login form#loginform input[type="submit"] {
+  background-color: #033f5a;
+  color: #fff;
+  padding: 0px 35px;
+  margin-top: 30px;
+}
+
+body.login div#login form#loginform p:nth-child(2) {
+  margin-top: 30px;
+}
