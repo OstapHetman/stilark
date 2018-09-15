@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <!-- Latest compiled and minified FontAwesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php echo get_theme_mod('favicon_icon', get_bloginfo('template_url').'/favicon.ico'); ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo get_theme_mod('favicon_icon', get_bloginfo('template_url').'/favicon.ico'); ?>" type="image/x-icon">
 
     <?php wp_head(); ?>
 

@@ -134,4 +134,8 @@
   add_action('init', 'tags_categories_support_all');
   add_action('pre_get_posts', 'tags_categories_support_query');
     
+  // Customizer
+  // Customizer File
+  require get_template_directory(). '/includes/customizer.php';
+
 ?>
